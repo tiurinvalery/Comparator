@@ -98,8 +98,6 @@ public class Main {
             if (target_point != null) {
                 if (max_value_cmp_counter > pixel_sum * prob) {
                    return target_point;
-                } else {
-                    System.out.println("Не найдено значительного сходства в точке с кординатами х: "+target_point.x+ " y: "+target_point.y);
                 }
             }
 
