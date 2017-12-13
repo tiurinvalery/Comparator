@@ -12,7 +12,10 @@ public class Main {
     public static double prob = 0.9;//согласно 10% взятых с задания
 
     public static void main(String args[]) {
-      BufferedImage img1 = null;
+       /* Server.listenPort(8853);
+        Client.sendFile("192.168.1.75",8853);
+        System.out.println("OK"); */
+     BufferedImage img1 = null;
       try{
           final String imgSource1 = "file:///D:/javaP/MyComporator/image/1.jpg";
           URL url = new URL(imgSource1);

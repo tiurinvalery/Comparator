@@ -8,7 +8,8 @@ public class Client {
     public static void sendFile(String ip, int port) {
         int i =0;
         try {
-            FileInputStream fis = new FileInputStream("PathToYourImage/image.jpg");
+            final String imgSource = "file:///D:/client/1.jpg";
+            FileInputStream fis = new FileInputStream(imgSource);
             Socket socket = new Socket(ip, port);
             DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
             while(( i=fis.read())> -1) {

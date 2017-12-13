@@ -13,7 +13,8 @@ public class Server {
                 Socket clientSocket = serverSocket.accept();
 
                 DataInputStream dis = new DataInputStream(clientSocket.getInputStream());
-                FileOutputStream fos = new FileOutputStream("PathToStoreImage/img.jpg");
+                final String imgSource = "file:///D:/server/img.jpg";
+                FileOutputStream fos = new FileOutputStream(imgSource);
                 int i;
                 while((i=dis.read()) > -1) {
                     fos.write(i);
